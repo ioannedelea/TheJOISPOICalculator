@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "JOISPOICalculator/1.0.0": {
+        "dependencies": {
+          "SharpClipboard": "3.5.2"
+        },
+        "runtime": {
+          "JOISPOICalculator.dll": {}
+        }
+      },
+      "SharpClipboard/3.5.2": {
+        "runtime": {
+          "lib/netcoreapp3.0/SharpClipboard.dll": {
+            "assemblyVersion": "3.5.2.0",
+            "fileVersion": "3.5.2.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "JOISPOICalculator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SharpClipboard/3.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FdH8/Rd+xDLwnj7CgeQAZb/EuPGzSXNxfE1SOr2I1XbWB6pANhYvTsc70GYelXWZHBGlct2p+PJK/AETTbkHjQ==",
+      "path": "sharpclipboard/3.5.2",
+      "hashPath": "sharpclipboard.3.5.2.nupkg.sha512"
+    }
+  }
+}
