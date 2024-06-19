@@ -1,0 +1,1 @@
+"The JOISPOI Calculator" is a miniproject written in C# for streamer JOISPOI. It converts the players bit flags (used by spec_player command) to decimal for tv_listen_voice_indices and tv_listen_voice_indices_h cmd.
