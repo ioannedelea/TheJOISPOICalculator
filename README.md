@@ -3,13 +3,12 @@
 
 ## How to use
 
-<ol>
-  <li>First download and install [The JOISPOI Calculator](https://github.com/ioannedelea/TheJOISPOICalculator/releases/download/v0.1-beta/JOISPOICalculatorSetup.msi) from the releases page</li>
-  <li>Run the app</li>
-  <li>Just play a faceIT demo using playdemo command</li>
-  <li>Search through spectated players using the command in CS2 console: spec_player x where x is a number.</li>
-  <li>Once you find a player you want to enable comms for, just right click on the console text spec_player x and press copy (you don't need to paste it into The JOISPOI Calculator. It will automatically pick it up from clipboard). </li>
-  <li>Do this for every player you want comms enabled for.</li>
-  <li>Go back to The JOISPOI Calculator and click "Gimme the commands" button </li>
-  <li>That will copy the necessary commands in the clipboard. All you need to do is paste them in the CS2 console.</li>
-</ol
+1. First download and install [The JOISPOI Calculator](https://github.com/ioannedelea/TheJOISPOICalculator/releases/download/v0.1-beta/) from the releases page</li>
+Run the app
+2. Just play a faceIT demo using playdemo command
+3. Search through spectated players using the command in CS2 console: spec_player x where x is a number.
+4. Once you find a player you want to enable comms for, just right click on the console text spec_player x and press copy (you don't need to paste it into The JOISPOI Calculator. It will automatically pick it up from clipboard). 
+5. Do this for every player you want comms enabled for.
+6. Go back to The JOISPOI Calculator and click "Gimme the commands" button 
+7. That will copy the necessary commands in the clipboard. All you need to do is paste them in the CS2 console.
+
