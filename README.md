@@ -12,3 +12,4 @@ Run the app
 6. Go back to The JOISPOI Calculator and click "Gimme the commands" button 
 7. That will copy the necessary commands in the clipboard. All you need to do is paste them in the CS2 console.
 
+![Alt text](https://i.imgur.com/jB7Lmgb.png)
