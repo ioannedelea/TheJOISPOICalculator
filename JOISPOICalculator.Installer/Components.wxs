@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  
+  <Fragment>
+    <ComponentGroup Id="ProductComponents">
+      <ComponentRef Id="MainAppShortcut" />
+    </ComponentGroup>
+
+    <DirectoryRef Id="INSTALLFOLDER" FileSource="..\JOISPOICalculator\bin\Debug\net6.0-windows7.0\win-$(var.Platform)\publish\">
+      <Component Id="MainAppShortcut" Guid="{981A9B5C-2B6D-4480-93DF-73AE66B57AB7}">
+
+        <Shortcut Id="MainAppShortcut"
+          Name="!(loc.ProductName_$(var.Platform))"
+          Target="[INSTALLFOLDER]JOISPOICalculator.exe"
+          Directory="InstallProgramMenuFolder"
+          WorkingDirectory="INSTALLFOLDER"
+          Icon="icon.ico"
+                  />
+
+        <!-- Our unique key for this component/shortcut -->
+        <RegistryValue Id="RegShortcutKey" Root="HKCU" Key="SOFTWARE\$(loc.ProductNameFolder)" Name="Shortcut" Value="1" Type="integer" KeyPath="yes" />
+        <!-- Remove start menu items-->
+        <RemoveFolder Id="RemoveStartMenu" Directory="InstallProgramMenuFolder" On="uninstall"/>
+      </Component>
+    </DirectoryRef>
+    
+  </Fragment>
+  
+</Wix>

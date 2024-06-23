@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="en-us" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+
+  <String Id="ProductNameFolder">JOISPOI Calculator</String>
+
+  <String Id="ProductName_x86">JOISPOI Calculator (32bit)</String>
+  <String Id="ProductName_x64">JOISPOI Calculator (64bit)</String>
+
+  <String Id="Description">Converts the players bit flags (used by spec_player command) to decimal for tv_listen_voice_indices and tv_listen_voice_indices_h cmd</String>
+  <String Id="Keywords">winforms, C#, application, installer</String>
+  <String Id="Comments">In development</String>
+  
+  <String Id="DownGradeErrorMessage">A newer version of JOISPOI Calculator is already installed</String>
+
+
+  <String Id="Company">StilgarTF</String>
+  <String Id="Language">1033</String>
+</WixLocalization>

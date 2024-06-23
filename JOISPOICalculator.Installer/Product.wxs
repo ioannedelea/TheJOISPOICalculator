@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  
+  <?if $(var.Platform)=x64 ?>
+  <?define ProductCode = "{439FCDB6-90B6-4068-9DA0-7FDD551D0BF4}"?>
+  <?else?>
+  <?define ProductCode = "{8430B14C-9B48-4DCE-A8F8-441A69E6BE1E}"?>
+  <?endif?>
+
+  <?define UpgradeCode = "{D164C8A1-AD74-4BC1-A0F9-778DECE54100}"?>
+
+  
+  
+	<Product Id="$(var.ProductCode)" 
+           Name="!(loc.ProductName_$(var.Platform))" 
+           Language="!(loc.Language)" 
+           Version="$(var.BuildVersion)" 
+           Manufacturer="!(loc.Company)" 
+           UpgradeCode="$(var.UpgradeCode)">
+    
+		<Package InstallerVersion="200" 
+             Compressed="yes" 
+             InstallScope="perMachine" 
+             Platform ="$(var.Platform)"
+             Manufacturer="!(loc.Company)"
+             Description="!(loc.Description)"
+             Keywords ="!(loc.Keywords)"
+             Comments ="!(loc.Comments)"
+             Languages ="!(loc.Language)"
+             />
+
+		<MajorUpgrade DowngradeErrorMessage="!(loc.DownGradeErrorMessage)" />
+    
+    
+		<MediaTemplate 
+      EmbedCab="yes"
+      />
+
+    <Icon Id="icon.ico" SourceFile="$(var.JOISPOICalculator.ProjectDir)\app.ico"/>
+
+     
+    <Property Id="ARPPRODUCTICON">icon.ico</Property>
+    <Property Id="ARPURLINFOABOUT">https://github.com/ioannedelea/TheJOISPOICalculator</Property>
+
+
+    <UIRef Id="WixUI_Minimal"/>
+    <WixVariable Id="WixUIDialogBmp" Value="$(var.ProjectDir)\Assets\Background.bmp"/>
+    <WixVariable Id="WixUIBannerBmp" Value="$(var.ProjectDir)\Assets\Banner.bmp"/>
+    <WixVariable Id="WixUILicenseRtf" Value="$(var.ProjectDir)\Assets\License.rtf"/>
+
+    <Feature Id="ProductFeature" Title="JOISPOICalculator" Level="1">
+      
+			<ComponentGroupRef Id="ProductComponents" />
+      <ComponentGroupRef Id="PublishedComponents" />
+      
+		</Feature>
+	</Product>
+
+
+</Wix>
