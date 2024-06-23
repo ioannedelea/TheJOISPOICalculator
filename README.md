@@ -3,7 +3,7 @@
 
 ## How to use
 
-1. First download and install [The JOISPOI Calculator](https://github.com/ioannedelea/TheJOISPOICalculator/releases/download/v0.1-beta/JOISPOICalculatorSetup.msi) from the releases page</li>
+1. First download and install [The JOISPOI Calculator](https://github.com/ioannedelea/TheJOISPOICalculator/releases/download/v.0.1/JOISPOICalculator-0.1.0.0-Release-x86.msi) from the releases page</li>
 Run the app
 2. Just play a faceIT demo using playdemo command
 3. Search through spectated players using the command in CS2 console: spec_player x where x is a number.
@@ -12,4 +12,4 @@ Run the app
 6. Go back to The JOISPOI Calculator and click "Gimme the commands" button 
 7. That will copy the necessary commands in the clipboard. All you need to do is paste them in the CS2 console.
 
-![Alt text](https://i.imgur.com/jB7Lmgb.png)
+![Alt text](https://i.imgur.com/Fn6FprA.png)
